@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de sessões</title>
+    <!-- Metadata -->
+    <meta name="title" content="Kirby-Desai Scale Calculator" />
+    <meta name="description" content="A simple Kirby-Desai Scale calculator for estimating the number of laser tattoo-removal sessions required." />
+    <meta name="keywords" content="tattoo, tattoo removal, Kirby-Desai, calculator" />
+    <meta name="theme-color" content="#2a70b6" />
+    <meta property="og:site_name" content="Kirby-Desai Scale Calculator" />
+    <meta property="og:url" content="https://0x24a537r9.github.io/kirbydesai/" />
+    <meta property="og:title" content="Kirby-Desai Scale Calculator" />
+    <!-- <meta property="og:image" content="https://0x24a537r9.github.io/kirbydesai/opengraph.png" /> -->
+    <meta property="og:description" content="A simple Kirby-Desai Scale calculator for estimating the number of laser tattoo-removal sessions required." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Kirby-Desai Scale Calculator" />
+    <meta name="twitter:description" content="A simple Kirby-Desai Scale calculator for estimating the number of laser tattoo-removal sessions required." />
+    <!-- <meta name="twitter:image" content="https://0x24a537r9.github.io/kirbydesai/opengraph.png" /> -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://0x24a537r9.github.io/kirbydesai/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://0x24a537r9.github.io/kirbydesai/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://0x24a537r9.github.io/kirbydesai/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://0x24a537r9.github.io/kirbydesai/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://0x24a537r9.github.io/kirbydesai/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://0x24a537r9.github.io/kirbydesai/favicons/favicon-128x128.png" sizes="128x128" />
+    <meta name="application-name" content="Kirby-Desai Scale Calculator"/>
+    <meta name="msapplication-TileColor" content="#2A70B6" />
+    <meta name="msapplication-TileImage" content="https://0x24a537r9.github.io/kirbydesai/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://0x24a537r9.github.io/kirbydesai/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://0x24a537r9.github.io/kirbydesai/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://0x24a537r9.github.io/kirbydesai/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://0x24a537r9.github.io/kirbydesai/favicons/mstile-310x310.png" />
+    <!-- Code -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Kirby-Desai Scale Calculator" href="opensearch.xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section class="page">
+      <!-- <h1 class="title">Kirby-Desai Tattoo Removal Scale</h1> -->
+      <img src="img/LOGOTIPO-PRETO.png" alt="" class = "logo">
+      <form>
+        <table class="form-table">
+          <colgroup>
+            <col><col><col><col><col><col><col>
+          </colgroup>
+          <tbody>
+            <tr><th colspan="6"><h2>Tipo de pele</h2></th><th></th></tr>
+            <tr>
+              <td>
+                <input type="radio" id="skin-1" name="skin" value="1" class="radio-toggle"></input>
+                <label for="skin-1">
+                  <img class="image" src="img/skin/skin-1.svg">
+                  <div class="description">Sempre queima &amp; nunca bronzeia</div>
+                  <div class="pontos"><span class="point">1</span> ponto</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="skin-2" name="skin" value="2" class="radio-toggle"></input>
+                <label for="skin-2">
+                  <img class="image" src="img/skin/skin-2.svg">
+                  <div class="description">Queima facilmente &amp; bronzeia minimamente</div>
+                  <div class="pontos"><span class="point">2</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="skin-3" name="skin" value="3" class="radio-toggle"></input>
+                <label for="skin-3">
+                  <img class="image" src="img/skin/skin-3.svg">
+                  <div class="description">Às vezes queima &amp; bronzeia lentamente</div>
+                  <div class="pontos"><span class="point">3</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="skin-4" name="skin" value="4" class="radio-toggle"></input>
+                <label for="skin-4">
+                  <img class="image" src="img/skin/skin-4.svg">
+                  <div class="description">Queima pouco &amp; geralmente bronzeia</div>
+                  <div class="pontos"><span class="point">4</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="skin-5" name="skin" value="5"class="radio-toggle"></input>
+                <label for="skin-5">
+                  <img class="image" src="img/skin/skin-5.svg">
+                  <div class="description">Raramente queima &amp; bronzeia bem</div>
+                  <div class="pontos"><span class="point">5</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="skin-6" name="skin" value="6"class="radio-toggle"></input>
+                <label for="skin-6">
+                  <img class="image" src="img/skin/skin-6.svg">
+                  <div class="description">Nunca queima &amp; bronzeia profundamente</div>
+                  <div class="pontos"><span class="point">6</span> pontos</div>
+                </label>
+              </td>
+              <td class="skin-points points"></td>
+            </tr>
+            <tr><th colspan="6"><h2>Localização da tatuagem</h2></th><th></th></tr>
+            <tr>
+              <td>
+                <input type="radio" id="location-1" name="location" value="1" class="radio-toggle"></input>
+                <label for="location-1">
+                  <img class="image" src="img/location/location-1.svg">
+                  <div class="description">Cabeça, pescoço ou face</div>
+                  <div class="pontos"><span class="point">1</span> ponto</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="location-2" name="location" value="2" class="radio-toggle"></input>
+                <label for="location-2">
+                  <img class="image" src="img/location/location-2.svg">
+                  <div class="description">Peitoral ou ombros</div>
+                  <div class="pontos"><span class="point">2</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="location-3" name="location" value="3" class="radio-toggle"></input>
+                <label for="location-3">
+                  <img class="image" src="img/location/location-3.svg">
+                  <div class="description">Abdômen, lombar ou coxas</div>
+                  <div class="pontos"><span class="point">3</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="location-4" name="location" value="4" class="radio-toggle"></input>
+                <label for="location-4">
+                  <img class="image" src="img/location/location-4.svg">
+                  <div class="description">Inferior de braços ou pernas</div>
+                  <div class="pontos"><span class="point">4</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="location-5" name="location" value="5" class="radio-toggle"></input>
+                <label for="location-5">
+                  <img class="image" src="img/location/location-5.svg">
+                  <div class="description">Pulso,mão, tornozelo ou pé</div>
+                  <div class="pontos"><span class="point">5</span> pontos</div>
+                </label>
+              </td>
+              <td class="empty"></td>
+              <td class="location-points points"></td>
+            </tr>
+            <tr><th colspan="6"><h2>Quantidade de tinta</h2></th><th></th></tr>
+            <tr>
+              <td>
+                <input type="radio" id="ink-1" name="ink" value="1" class="radio-toggle"></input>
+                <label for="ink-1">
+                  <img class="image" src="img/ink/ink-1.svg">
+                  <div class="description">Amadora</div>
+                  <div class="pontos"><span class="point">1</span> ponto</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="ink-2" name="ink" value="2" class="radio-toggle"></input>
+                <label for="ink-2">
+                  <img class="image" src="img/ink/ink-2.svg">
+                  <div class="description">Mínima</div>
+                  <div class="pontos"><span class="point">2</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="ink-3" name="ink" value="3" class="radio-toggle"></input>
+                <label for="ink-3">
+                  <img class="image" src="img/ink/ink-3.svg">
+                  <div class="description">Moderada</div>
+                  <div class="pontos"><span class="point">3</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="ink-4" name="ink" value="4" class="radio-toggle"></input>
+                <label for="ink-4">
+                  <img class="image" src="img/ink/ink-4.svg">
+                  <div class="description">Significativa</div>
+                  <div class="pontos"><span class="point">4</span> pontos</div>
+                </label>
+              </td>
+              <td class="empty" colspan="2"></td>
+              <td class="ink-points points"></td>
+            </tr>
+            <tr><th colspan="6"><h2>Camadas de tinta</h2></th><th></th></tr>
+            <tr>
+              <td>
+                <input type="radio" id="layering-1" name="layering" value="0" class="radio-toggle"></input>
+                <label for="layering-1">
+                  <img class="image" src="img/layering/layering-1.svg">
+                  <div class="description">Uma camada</div>
+                  <div class="pontos"><span class="point">0</span> ponto</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="layering-2" name="layering" value="2" class="radio-toggle"></input>
+                <label for="layering-2">
+                  <img class="image" src="img/layering/layering-2.svg">
+                  <div class="description">Várias camadas</div>
+                  <div class="pontos"><span class="point">2</span> pontos</div>
+                </label>
+              </td>
+              <td class="empty" colspan="4"></td>
+              <td class="layering-points points"></td>
+            </tr>
+            <tr><th colspan="6"><h2>Cicatrizes &amp; alterações na pele</h2></th><th></th></tr>
+            <tr>
+              <td>
+                <input type="radio" id="scarring-1" name="scarring" value="0" class="radio-toggle"></input>
+                <label for="scarring-1">
+                  <img class="image" src="img/scarring/scarring-1.svg">
+                  <div class="description">Sem cicatriz</div>
+                  <div class="pontos"><span class="point">0</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="scarring-2" name="scarring" value="1" class="radio-toggle"></input>
+                <label for="scarring-2">
+                  <img class="image" src="img/scarring/scarring-2.svg">
+                  <div class="description">Cicatriz mínima</div>
+                  <div class="pontos"><span class="point">1</span> ponto</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="scarring-3" name="scarring" value="3" class="radio-toggle"></input>
+                <label for="scarring-3">
+                  <img class="image" src="img/scarring/scarring-3.svg">
+                  <div class="description">Cicatriz moderada</div>
+                  <div class="pontos"><span class="point">3</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="scarring-4" name="scarring" value="5" class="radio-toggle"></input>
+                <label for="scarring-4">
+                  <img class="image" src="img/scarring/scarring-4.svg">
+                  <div class="description">Cicatriz significativa</div>
+                  <div class="pontos"><span class="point">5</span> pontos</div>
+                </label>
+              </td>
+              <td class="empty" colspan="2"></td>
+              <td class="scarring-points points"></td>
+            </tr>
+            <tr><th colspan="6"><h2>Cores</h2></th><th></th></tr>
+            <tr>
+              <td>
+                <input type="radio" id="colors-1" name="colors" value="1" class="radio-toggle"></input>
+                <label for="colors-1">
+                  <img class="image" src="img/colors/colors-1.svg">
+                  <div class="description">Apenas preto</div>
+                  <div class="pontos"><span class="point">1</span> ponto</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="colors-2" name="colors" value="2" class="radio-toggle"></input>
+                <label for="colors-2">
+                  <img class="image" src="img/colors/colors-2.svg">
+                  <div class="description">Principalmente preto e um pouco de vermelho</div>
+                  <div class="pontos"><span class="point">2</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="colors-3" name="colors" value="3" class="radio-toggle"></input>
+                <label for="colors-3">
+                  <img class="image" src="img/colors/colors-3.svg">
+                  <div class="description">Principalmente preto e vermelho com outras cores</div>
+                  <div class="pontos"><span class="point">3</span> pontos</div>
+                </label>
+              </td>
+              <td>
+                <input type="radio" id="colors-4" name="colors" value="4" class="radio-toggle"></input>
+                <label for="colors-4">
+                  <img class="image" src="img/colors/colors-4.svg">
+                  <div class="description">Múltiplas cores</div>
+                  <div class="pontos"><span class="point">4</span> pontos</div>
+                </label>
+              </td>
+              <td class="empty" colspan="2"></td>
+              <td class="colors-points points"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="7"></td></tr>
+            <tr>
+              <td colspan="6"><h1>Número aproximado de sessões:</h1></td>
+              <td class="total-points points"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+    </section>
+    <footer>
+
+    </footer>
+  </body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85982391-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>
